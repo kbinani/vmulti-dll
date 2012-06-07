@@ -1,0 +1,23 @@
+TARGETNAME=vmulti
+TARGETTYPE=DYNLINK
+USE_MSVCRT=1
+
+TARGETLIBS=$(SDK_LIB_PATH)\hid.lib \
+           $(SDK_LIB_PATH)\setupapi.lib \
+           $(SDK_LIB_PATH)\comdlg32.lib \
+           $(SDK_LIB_PATH)\kernel32.lib \
+           $(OBJ_PATH)\..\client\$(O)\vmulticlient.lib 
+           
+SOURCES=dll.c dll.rc
+
+INCLUDES=..\inc
+
+UMTYPE=console
+DLLBASE=0x10000000
+
+TARGET_DESTINATION=bin
+
+_NT_TARGET_VERSION= $(_NT_TARGET_VERSION_WINXP)
+
+
+
