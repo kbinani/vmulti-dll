@@ -1,0 +1,6 @@
+LIBRARY vmulti
+EXPORTS
+	VMultiCreateKeyboardClient
+	VMultiRelease
+	VMultiSetKey
+	VMultiClearKey
