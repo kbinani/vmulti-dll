@@ -1,6 +1,6 @@
 # vmulti-dll
 
-- a client dll for vmulti
+- A client dll for [vmulti](http://code.google.com/p/vmulti/).
 
 # License
 
